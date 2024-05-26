@@ -1,0 +1,193 @@
+{
+  "Departments": {
+    "Group1": "Teachers",
+    "Group2": "HR",
+    "Group3": "Maintainance",
+    "Group4": "Students",
+    "Group5": "GovtBody"
+  },
+  "Faculty": [
+    {
+      "departmentsGroup": "Group3",
+      "firstName": "Michele",
+      "lastName": "Runte",
+      "id": "419",
+      "email": "MicheleRunte@mailinator.com",
+      "salary": "10221",
+      "phoneNumber": {
+        "homePhone": "2735754080",
+        "cellPhone": "3861540628"
+      }
+    },
+    {
+      "departmentsGroup": "Group : 3",
+      "firstName": "Lue",
+      "lastName": "Hartmann",
+      "id": "173",
+      "email": "LueHartmann@mailinator.com",
+      "salary": "10002",
+      "phoneNumber": {
+        "homePhone": "3590133475",
+        "cellPhone": "3892556177"
+      }
+    },
+    {
+      "departmentsGroup": "Group : 1",
+      "firstName": "Danial",
+      "lastName": "Ortiz",
+      "id": "711",
+      "email": "DanialOrtiz@mailinator.com",
+      "salary": "11111",
+      "phoneNumber": {
+        "homePhone": "1816860805",
+        "cellPhone": "5116264040"
+      }
+    },
+    {
+      "departmentsGroup": "Group : 3",
+      "firstName": "Alessandra",
+      "lastName": "Dicki",
+      "id": "841",
+      "email": "AlessandraDicki@mailinator.com",
+      "salary": "20021",
+      "phoneNumber": {
+        "homePhone": "0630845856",
+        "cellPhone": "6303245856"
+      }
+    },
+    {
+      "departmentsGroup": "Group : 2",
+      "firstName": "Denis",
+      "lastName": "Dibbert",
+      "id": "533",
+      "email": "DenisDibbert@mailinator.com",
+      "salary": "11110",
+      "phoneNumber": {
+        "homePhone": "2429150792",
+        "cellPhone": "9599829107"
+      }
+    },
+    {
+      "departmentsGroup": "Group : 3",
+      "firstName": "Kendrick",
+      "lastName": "Johnson",
+      "id": "501",
+      "email": "KendrickJohnson@mailinator.com",
+      "salary": "12211",
+      "phoneNumber": {
+        "homePhone": "7188261062",
+        "cellPhone": "0363022997"
+      }
+    },
+    {
+      "departmentsGroup": "Group : 1",
+      "firstName": "Jaeden",
+      "lastName": "Nienow",
+      "id": "248",
+      "email": "JaedenNienow@mailinator.com",
+      "salary": "02012",
+      "phoneNumber": {
+        "homePhone": "4985438286",
+        "cellPhone": "0817362550"
+      }
+    },
+    {
+      "departmentsGroup": "Group : 3",
+      "firstName": "Jude",
+      "lastName": "Schneider",
+      "id": "164",
+      "email": "JudeSchneider@mailinator.com",
+      "salary": "20011",
+      "phoneNumber": {
+        "homePhone": "9536338827",
+        "cellPhone": "2028977105"
+      }
+    },
+    {
+      "departmentsGroup": "Group : 3",
+      "firstName": "Ines",
+      "lastName": "Stiedemann",
+      "id": "63",
+      "email": "InesStiedemann@mailinator.com",
+      "salary": "12012",
+      "phoneNumber": {
+        "homePhone": "9402224837",
+        "cellPhone": "7182018616"
+      }
+    },
+    {
+      "departmentsGroup": "Group : 5",
+      "firstName": "Meta",
+      "lastName": "Schultz",
+      "id": "466",
+      "email": "MetaSchultz@mailinator.com",
+      "salary": "11011",
+      "phoneNumber": {
+        "homePhone": "8973222042",
+        "cellPhone": "4932413809"
+      }
+    },
+    {
+      "departmentsGroup": "Group : 2",
+      "firstName": "Lamar",
+      "lastName": "Johnston",
+      "id": "224",
+      "email": "LamarJohnston@mailinator.com",
+      "salary": "12001",
+      "phoneNumber": {
+        "homePhone": "5535646416",
+        "cellPhone": "0378389160"
+      }
+    }
+  ],
+  "Students": [
+    {
+      "departmentsGroup": "Group:4",
+      "id": 2331,
+      "firstName": "Darwin",
+      "lastName": "D'Amore",
+      "Grade": "1th",
+      "email": "DarwinD'Amore@mailinator.com"
+    },
+    {
+      "departmentsGroup": "Group:4",
+      "id": 2324,
+      "firstName": "Naomie",
+      "lastName": "Little",
+      "Grade": "4th",
+      "email": "NaomieLittle@mailinator.com"
+    },
+    {
+      "departmentsGroup": "Group:4",
+      "id": 4343,
+      "firstName": "Chad",
+      "lastName": "Monahan",
+      "Grade": "1th",
+      "email": "ChadMonahan@mailinator.com"
+    },
+    {
+      "departmentsGroup": "Group:4",
+      "id": 3313,
+      "firstName": "Eddie",
+      "lastName": "Waelchi",
+      "Grade": "3th",
+      "email": "EddieWaelchi@mailinator.com"
+    },
+    {
+      "departmentsGroup": "Group:4",
+      "id": 1322,
+      "firstName": "Jermey",
+      "lastName": "Waters",
+      "Grade": "4th",
+      "email": "JermeyWaters@mailinator.com"
+    },
+    {
+      "departmentsGroup": "Group3",
+      "id": 3394,
+      "firstName": "Kazol",
+      "lastName": "Kamar",
+      "Grade": "6",
+      "email": "kazolkamar@zsolution.com"
+    }
+  ]
+}

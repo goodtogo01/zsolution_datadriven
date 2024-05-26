@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Departments": {
+      "type": "object",
+      "properties": {
+        "Group1": {
+          "type": "string"
+        },
+        "Group2": {
+          "type": "string"
+        },
+        "Group3": {
+          "type": "string"
+        },
+        "Group4": {
+          "type": "string"
+        },
+        "Group5": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Group1",
+        "Group2",
+        "Group3",
+        "Group4",
+        "Group5"
+      ]
+    },
+    "Faculty": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "departments": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "email": {
+              "type": "string"
+            },
+            "salary": {
+              "type": "integer"
+            },
+            "phoneNumber": {
+              "type": "object",
+              "properties": {
+                "home": {
+                  "type": "integer"
+                },
+                "cell": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "home",
+                "cell"
+              ]
+            }
+          },
+          "required": [
+            "departments",
+            "firstName",
+            "lastName",
+            "id",
+            "email",
+            "salary",
+            "phoneNumber"
+          ]
+        }
+      ]
+    },
+    "Students": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "departmentsGroup": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "Grade": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "departmentsGroup",
+            "id",
+            "firstName",
+            "lastName",
+            "Grade",
+            "email"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "Departments",
+    "Faculty",
+    "Students"
+  ]
+}

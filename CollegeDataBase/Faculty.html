@@ -1,0 +1,114 @@
+<html>  
+<head>  
+  <title>Zsolution New Faculty Entry Form </title>
+  
+</head>  
+<h2>Welcome to Zsolution Technology</h2> 
+<p> This Page is particulerly utilizing for add new record of Faculty.</p>
+<body style="background-color:powderblue;"> 
+   <form id ="form_data" method="post">  
+       <input type = "text", id = "departmentsGroup" placeholder = "Write Group name"/>  
+   
+       <input type = "text", id = "firstName" placeholder = "Enter First Name"/>  
+       <br><br>  
+       <input type = "text", id = "lastName" placeholder = "Enter Last Name"/>  
+   
+       <input type = "text", id = "id" placeholder = "Enter ID Number"/>  
+       <br><br>  
+       <input type = "text", id = "email" placeholder = "Enter Email Address"/>  
+   
+       <input type = "text", id = "salary" placeholder = "Enter Salary"/> 
+       <br><br>  
+       <input type = "text", id = "homePhone" placeholder = "Enter Home Phone Number"/> 
+      
+       <input type = "text", id = "cellPhone" placeholder = "Enter Cell Phone Number"/>
+       <br><br>  
+       <input type="submit" value="Insert Value">  
+       <button onclick="window.location.href='Zsolution.html';"> Back to Home Page</button>
+    </form>   
+    <div>  
+    <!-- <h3>The data is successfully inserted</h3>   -->
+    <h4 id="departmentsGroup"></h4>  
+    <h4 id="firstName"></h4>  
+    <h4 id="lastName"></h4> 
+    <h4 id="id"></h4>  
+    <h4 id="email"></h4>
+    <h4 id="salary"></h4>  
+    <h4 id="homePhone"></h4>
+    <h4 id="cellPhone"></h4>
+   
+    </div>  
+</body>  
+
+<script>  
+
+//get the variable of the form id for the function  
+var form_data=document.getElementById('form_data')  
+//create a function to use fetch api  
+form_data.addEventListener('submit', function(e){  
+ e.preventDefault()  
+
+//use the id of the input tag of the form  
+ var departmentsGroup = document.getElementById('departmentsGroup').value  
+ var firstName = document.getElementById('firstName').value  
+ var lastName = document.getElementById('lastName').value  
+ var id = document.getElementById('id').value  
+ var email = document.getElementById('email').value 
+ var salary = document.getElementById('salary').value  
+ var homePhone = document.getElementById('homePhone').value 
+ var cellPhone = document.getElementById('cellPhone').value 
+//fetch method with url request  
+let url ='http://localhost:3000/Faculty';  
+ fetch(url, {  
+  method: 'POST',  
+  //call user input value  
+  body: JSON.stringify({  
+    departmentsGroup: departmentsGroup,  
+    firstName: firstName,
+    lastName: lastName,
+    id: id, 
+    email:email,
+    salary:salary,
+    phoneNumber:{
+      homePhone:homePhone,
+      cellPhone:cellPhone
+    }
+  
+  }),  
+  headers: {  
+    'Content-type': 'application/json; charset=UTF-8',  
+  }  
+  })  
+  .then(function(response){   
+  return response.json()})  
+  .then(function(datas)  
+  {  
+  //display data in console  
+  console.log(datas)  
+  //shows user input values  
+  departmentsGroup = document.getElementById("departmentsGroup")  
+  firstName = document.getElementById("firstName")  
+  lastName = document.getElementById("lastName")  
+  id = document.getElementById("id") 
+  email = document.getElementById("email")  
+  salary = document.getElementById("salary") 
+  homePhone=document.getElementById("homePhone")
+  cellPhone=document.getElementById("cellPhone")
+  
+  departmentsGroup.innerHTML = datas.departmentsGroup  
+  firstName.innerHTML= datas.firstName
+  lastName.innerHTML= datas.lastName
+  id.innerHTML = datas.id
+  email.innerHTML=datas.email   
+  salary.innerHTML=datas.salary
+  homePhone.innerHTML=datas.homePhone
+  cellPhone.innerHTML=datas.cellPhone
+  alert("Data Stored successfully!!")
+  
+}).catch(error => console.error('SEE Error:', error));   
+alert(error)
+
+});  
+</script>  
+
+</html> 

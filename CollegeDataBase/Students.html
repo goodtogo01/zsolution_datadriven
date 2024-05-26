@@ -1,0 +1,96 @@
+<html>  
+<head>  
+  <title>Zsolution New Student Entry Form </title>
+  
+</head>  
+<h2>Welcome to Zsolution Technology</h2> 
+<p><p> This Page is particulerly utilizing for add new record of Student.</p></p>
+<body style="background-color:powderblue;"> 
+   <form id ="form_data" method="post">  
+       <input type = "text", id = "departmentsGroup" placeholder = "Write Group name"/>  
+     
+       <input type = "text", id = "id" placeholder = "Enter ID Number"/>  
+       <br><br>  
+       <input type = "text", id = "firstName" placeholder = "Enter First Name"/>  
+      
+       <input type = "text", id = "lastName" placeholder = "Enter Last Name"/>  
+       <br><br>  
+       <input type = "text", id = "Grade" placeholder = "Enter Grade of the Student"/>  
+       
+       <input type = "text", id = "email" placeholder = "Enter Email Address"/>  
+       <br><br>  
+       <input type="submit" value="Insert Value">  
+       <button onclick="window.location.href='Zsolution.html';"> Back to Home Page</button>
+    </form>   
+    <div>  
+    <!-- <h3>The data is successfully inserted</h3>   -->
+    <h4 id="departmentsGroup"></h4>  
+    <h4 id="id"></h4>  
+    <h4 id="firstName"></h4>  
+    <h4 id="lastName"></h4> 
+    <h4 id="Grade"></h4>  
+    <h4 id="email"></h4>
+   
+    </div>  
+</body>  
+
+<script>  
+
+//get the variable of the form id for the function  
+var form_data=document.getElementById('form_data')  
+//create a function to use fetch api  
+form_data.addEventListener('submit', function(e){  
+ e.preventDefault()  
+
+//use the id of the input tag of the form  
+ var departmentsGroup = document.getElementById('departmentsGroup').value  
+ var id = document.getElementById('id').value  
+ var firstName = document.getElementById('firstName').value  
+ var lastName = document.getElementById('lastName').value  
+ var Grade = document.getElementById('Grade').value  
+ var email = document.getElementById('email').value 
+//fetch method with url request  
+let url ='http://localhost:3000/Students';  
+ fetch(url, {  
+  method: 'POST',  
+  //call user input value  
+  body: JSON.stringify({  
+    departmentsGroup: departmentsGroup,  
+    id: id, 
+    firstName: firstName,
+    lastName: lastName,
+    Grade:Grade,
+    email:email,
+  
+  }),  
+  headers: {  
+    'Content-type': 'application/json; charset=UTF-8',  
+  }  
+  })  
+  .then(function(response){   
+  return response.json()})  
+  .then(function(datas)  
+  {  
+  //display data in console  
+  console.log(datas)  
+  //shows user input values  
+  departmentsGroup = document.getElementById("departmentsGroup")  
+  id = document.getElementById("id") 
+  firstName = document.getElementById("firstName")  
+  lastName = document.getElementById("lastName")  
+  Grade = document.getElementById("Grade") 
+  email = document.getElementById("email")  
+  
+  departmentsGroup.innerHTML = datas.departmentsGroup  
+  id.innerHTML = datas.id
+  firstName.innerHTML= datas.firstName
+  lastName.innerHTML= datas.lastName
+  Grade.innerHTML=datas.Grade
+  email.innerHTML=datas.email   
+  alert("Data Stored successfully!!")
+}).catch(error => console.error('SEE Error:', error));   
+alert(error)
+
+});  
+</script>  
+</html> 
