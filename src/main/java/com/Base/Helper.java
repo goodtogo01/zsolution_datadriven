@@ -31,7 +31,7 @@ public class Helper {
 		prop = new Properties();
 		FileInputStream fis;
 		try {
-			fis = new FileInputStream("/Users/khosruzzaman/Current_Works/datadrivenTest/src/main/java/com/Configurations/config.Properties");
+			fis = new FileInputStream("C:\\MY_WORKS\\E2E_Projects\\zsolution_datadriven\\src\\main\\java\\com\\Configurations\\config.Properties");
 			try {
 				prop.load(fis);
 			} catch (FileNotFoundException fnf) {
@@ -45,10 +45,10 @@ public class Helper {
 	public static void initializations() {
 		String browserName = prop.getProperty("browser");
 		if(browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/khosruzzaman/Current_Works/datadrivenTest/Drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "C:\\MY_WORKS\\E2E_Projects\\zsolution_datadriven\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}else if(browserName.equalsIgnoreCase("ff")) {
-			System.setProperty("webdriver.gecko.driver", "/Users/khosruzzaman/Drivers/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "C:\\MY_WORKS\\E2E_Projects\\zsolution_datadriven\\Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}else {
 			driver = new SafariDriver();
@@ -67,7 +67,7 @@ public class Helper {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Utils.PAGE_LOADE_TIME, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Utils.IMPLICITLY_WAIT_TIME, TimeUnit.SECONDS);
-		driver.get(prop.getProperty("url"));
+		driver.get(prop.getProperty("win_Url"));
 		
 	}
 

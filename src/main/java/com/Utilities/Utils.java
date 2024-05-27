@@ -26,7 +26,7 @@ import com.Base.Helper;
 public class Utils extends Helper {
 	public static final long IMPLICITLY_WAIT_TIME = 10;
 	public static final long PAGE_LOADE_TIME = 10;
-	public static String TEST_DATA_SHEET_PATH = "../datadrivenTest/zsData.xlsx";
+	public static String TEST_DATA_SHEET_PATH = "C:\\MY_WORKS\\E2E_Projects\\zsolution_datadriven\\zsData.xlsx";
 	static Workbook book;
 	static Sheet sheet;
 	public static FileInputStream fis;
