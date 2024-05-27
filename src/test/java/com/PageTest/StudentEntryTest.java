@@ -34,7 +34,7 @@ public class StudentEntryTest extends Helper {
 		Assert.assertEquals(title, "Zsolution Home Page", "Edxpected Title not found");
 		
 	}
-	@Test(priority = 2, groups = "UI Eelemnts")
+	@Test(priority = 2, groups = "UI Eelemnt")
 	public void moveToStudentsOptions() {
 		studentEntry.clickStudentManue();
 		studentEntry.validateStudentOption();
