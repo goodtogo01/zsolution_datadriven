@@ -57,7 +57,7 @@ public class StudentEntryTest extends Helper {
 		studentPage();
 		studentEntry.enterNewStudentData(grous, id, firstName, lastName, grade, email);
 		studentEntry.clicEntryButton();
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		String message = studentEntry.getConfirmation().getText();
 		Assert.assertEquals(message, "Data Stored successfully!!");
 		studentEntry.getConfirmation().dismiss();

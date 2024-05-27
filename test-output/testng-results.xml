@@ -2,27 +2,59 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-27T13:14:42 EDT" name="Suite" finished-at="2024-05-27T13:14:57 EDT" duration-ms="15132">
+  <suite started-at="2024-05-27T14:47:50 EDT" name="Default suite" finished-at="2024-05-27T14:48:11 EDT" duration-ms="20905">
     <groups>
-      <group name="UI Eelemnts">
-        <method signature="StudentEntryTest.pageTitleTest()[pri:1, instance:com.PageTest.StudentEntryTest@25ce9dc4]" name="pageTitleTest" class="com.PageTest.StudentEntryTest"/>
-      </group> <!-- UI Eelemnts -->
+      <group name="Test Data">
+        <method signature="StudentEntryTest.addNewStudentData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.PageTest.StudentEntryTest@75437611]" name="addNewStudentData" class="com.PageTest.StudentEntryTest"/>
+      </group> <!-- Test Data -->
     </groups>
-    <test started-at="2024-05-27T13:14:42 EDT" name="Students Page Test" finished-at="2024-05-27T13:14:57 EDT" duration-ms="15132">
+    <test started-at="2024-05-27T14:47:50 EDT" name="Default test" finished-at="2024-05-27T14:48:11 EDT" duration-ms="20905">
       <class name="com.PageTest.StudentEntryTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.PageTest.StudentEntryTest@25ce9dc4]" started-at="2024-05-27T13:14:42 EDT" name="setup" finished-at="2024-05-27T13:14:50 EDT" duration-ms="8794" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.PageTest.StudentEntryTest@75437611]" started-at="2024-05-27T14:47:51 EDT" name="setup" finished-at="2024-05-27T14:48:02 EDT" duration-ms="10857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="pageTitleTest()[pri:1, instance:com.PageTest.StudentEntryTest@25ce9dc4]" started-at="2024-05-27T13:14:50 EDT" name="pageTitleTest" finished-at="2024-05-27T13:14:56 EDT" duration-ms="5080" status="PASS">
+        <test-method signature="addNewStudentData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.PageTest.StudentEntryTest@75437611]" started-at="2024-05-27T14:48:02 EDT" name="addNewStudentData" data-provider="getStudentData" finished-at="2024-05-27T14:48:09 EDT" duration-ms="6656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Group : 4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3215.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Shamol]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dokol]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9th]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[dokol01@zsolution.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pageTitleTest -->
-        <test-method is-config="true" signature="closeBrosers()[pri:0, instance:com.PageTest.StudentEntryTest@25ce9dc4]" started-at="2024-05-27T13:14:56 EDT" name="closeBrosers" finished-at="2024-05-27T13:14:57 EDT" duration-ms="1085" status="PASS">
+        </test-method> <!-- addNewStudentData -->
+        <test-method is-config="true" signature="closeBrosers()[pri:0, instance:com.PageTest.StudentEntryTest@75437611]" started-at="2024-05-27T14:48:09 EDT" name="closeBrosers" finished-at="2024-05-27T14:48:11 EDT" duration-ms="2293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrosers -->
       </class> <!-- com.PageTest.StudentEntryTest -->
-    </test> <!-- Students Page Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

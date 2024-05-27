@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.extentReportListeners.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" parallel="classes" name="Students Page Test(failed)">
     <classes>
       <class name="com.PageTest.StudentEntryTest">
         <methods>
@@ -14,5 +14,5 @@
         </methods>
       </class> <!-- com.PageTest.StudentEntryTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Students Page Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

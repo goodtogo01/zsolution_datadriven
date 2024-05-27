@@ -6,7 +6,7 @@
       <class name="com.PageTest.StudentEntryTest">
         <methods>
           <include name="setup"/>
-          <include name="pageTitleTest"/>
+          <include name="addNewStudentData" invocation-numbers="0"/>
           <include name="closeBrosers"/>
         </methods>
       </class> <!-- com.PageTest.StudentEntryTest -->
